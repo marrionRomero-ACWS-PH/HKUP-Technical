@@ -8,10 +8,10 @@ pageextension 50100 Item extends "Item Card"
             {
                 ApplicationArea = All;
             }
-            field("Product Number"; Rec."No.")
-            {
-                ApplicationArea = All;
-            }
+            // field("Product Number"; Rec."No.")
+            // {
+            //     ApplicationArea = All;
+            // }
 
             field("Pub Code"; Rec."Pub Code")
             {
@@ -37,11 +37,11 @@ pageextension 50100 Item extends "Item Card"
                 Lookup = true;
                 TableRelation = Vendor.Type;
             }
-            field("Publish Date"; Rec."Publish Date")
+            field("Publish Date"; Rec."Published Date")
             {
                 ApplicationArea = All;
             }
-            field("Format"; Rec."Format Master")
+            field("Format"; Rec."Format")
             {
                 ApplicationArea = All;
                 Lookup = true;
@@ -75,10 +75,9 @@ pageextension 50100 Item extends "Item Card"
             {
                 ApplicationArea = All;
             }
-        }
 
-        addlast(InventoryGrp)
-        {
+
+
             field("Weight (kg)"; Rec."Net Weight")
             {
                 ApplicationArea = All;
@@ -91,9 +90,7 @@ pageextension 50100 Item extends "Item Card"
             {
                 ApplicationArea = All;
             }
-        }
-        addlast("Prices & Sales")
-        {
+
             field("Discount (%)"; Rec."Net Weight")
             {
                 ApplicationArea = All;
@@ -114,23 +111,19 @@ pageextension 50100 Item extends "Item Card"
             {
                 ApplicationArea = All;
             }
-        }
-        addlast("Planning")
-        {
+
             field("Warning Level"; Rec."Warning Level")
             {
                 ApplicationArea = All;
             }
-        }
-        addlast("Warehouse")
-        {
+
             field("Warehouse Location"; Rec."Warehouse Class Code")
             {
                 ApplicationArea = All;
             }
+
         }
     }
-
     var
         myInt: Integer;
 }

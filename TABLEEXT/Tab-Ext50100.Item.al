@@ -32,9 +32,9 @@ tableextension 50100 Item extends Item
             Caption = 'Supplier';
             TableRelation = Vendor.Type WHERE("No." = FIELD("Vendor No."));
         }
-        field(50105; "Publish Date"; Date)
+        field(50105; "Published Date"; Date)
         {
-            Caption = 'Publish Date';
+            Caption = 'Published Date';
             DataClassification = ToBeClassified;
         }
         field(50106; "Actual Pages"; Integer)
@@ -42,9 +42,9 @@ tableextension 50100 Item extends Item
             Caption = 'Actual Pages';
             DataClassification = ToBeClassified;
         }
-        field(50118; "Format Master"; Code[50])
+        field(50118; "Format"; Code[50])
         {
-            Caption = 'Format Master';
+            Caption = 'Format';
             DataClassification = ToBeClassified;
             TableRelation = "Format Master";
 

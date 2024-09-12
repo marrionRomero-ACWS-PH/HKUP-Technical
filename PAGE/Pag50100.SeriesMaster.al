@@ -2,7 +2,7 @@ page 50100 "Series Master"
 {
     ApplicationArea = All;
     Caption = 'Series Master';
-    PageType = Card;
+    PageType = List;
     SourceTable = "Series Master";
 
     layout
